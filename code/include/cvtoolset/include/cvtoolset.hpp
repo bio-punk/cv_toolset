@@ -15,6 +15,7 @@
 #define CVTOOLSET_HPP
 
 #include <stack>
+#include <array>
 
 #include <cassert>
 
@@ -22,5 +23,11 @@
 
 #include <imgcut/region_grow.hpp>
 #include <imgcut/centers_cut.hpp>
+
+//#include <remove_noise/binary_graph.hpp>
+#include <remove_noise/naive_remove.hpp>
+#include <remove_noise/contours_remove.hpp>
+
+#include <utils/point_shift.hpp>
 
 #endif

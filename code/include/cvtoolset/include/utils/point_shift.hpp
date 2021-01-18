@@ -1,17 +1,16 @@
-
-#ifndef IMG_CUT__UTILS__POINT_SHIFT
-#define IMG_CUT__UTILS__POINT_SHIFT
+#ifndef UTILS__POINT_SHIFT
+#define UTILS__POINT_SHIFT
 
 #include <cvtoolset.hpp>
 
 using std::array;
 
 namespace cvts {
-    namespace img_cut {
+    namespace utils {
         /// <summary>
-        /// 8È¢ÜÂüü
+        /// 8¡Ï”Ú
         /// </summary>
-        const cv::Point PointShift2D8[8] = { 
+        const array<cv::Point, 8> PointShift2D8 {
             cv::Point(-1, -1),
             cv::Point(-1, 0),
             cv::Point(-1, 1),
@@ -23,9 +22,9 @@ namespace cvts {
         };
 
         /// <summary>
-        /// 4È¢ÜÂüü
+        /// 4¡Ï”Ú
         /// </summary>
-        const cv::Point PointShift2D4[4] = { 
+        const array<cv::Point, 4> PointShift2D4{
             cv::Point(-1, 0),
             cv::Point(0, -1),
             cv::Point(0, 1),
@@ -34,4 +33,4 @@ namespace cvts {
     }
 }
 
-#endif //IMG_CUT__UTILS__POINT_SHIFT
+#endif // !UTILS__POINT_SHIFT
